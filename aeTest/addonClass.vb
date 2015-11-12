@@ -23,7 +23,13 @@ Namespace addonCollectionName
         Public Overrides Function Execute(ByVal CP As CPBaseClass) As Object
             Dim returnHtml As String
             Try
-                returnHtml = "Visual Studio Contensive Addon - OK response"
+                '
+                ' This is a code change to class A, which Branch1 is behind.
+                '
+                '
+                '
+                '
+                returnHtml = "Visual Studio Contensive Addon - OK response -- the change"
             Catch ex As Exception
                 errorReport(CP, ex, "execute")
                 returnHtml = "Visual Studio Contensive Addon - Error response"
